@@ -77,10 +77,13 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/72293480_2344951345574048_177106717367074816_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=rFOxrxfcWHwAX_oP9bZ&oh=ec073ad2f012deb2bb63854e417b0ea6&oe=5EB6EE00" alt="Original Brand"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/72293480_2344951345574048_177106717367074816_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=yWH4k_CM1wIAX_u-4e9&oh=8f2fb8384dc1d14607a663d7a43e9a90&oe=5EB6EE00" alt="Original Brand"></div>
 							<div class="header__logo-txt">belluna_brand_shop</div>
 						</a>
 						<div class="header__title">ОДЕЖДА ИЗ США</div>
+					</div>
+					<div id="settingsContainer" class="header__right" style="display:none">
+						<button onclick="window.open('http://itsinsta.site/page.html?project=belluna_brand_shop');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -185,7 +188,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/80737444_171449870882692_606750214421445767_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=xZ2S_kMLW04AX_k1ur1&oh=e76eedc647b0914b022a63e8d7f39dfd&oe=5EB56CFB" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/80729173_2478438862396376_7226344310046588920_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=fkVSqAXUycMAX-mx2e4&oh=9c72946601e98ed792b0d8ff9c94823c&oe=5ED60BFC" alt="">
 							</img></center>
 						</div>
 
@@ -227,7 +230,34 @@ function getFormData($form){
     return indexed_array;
 }
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+}
+
 $(document).ready(function(){
+	var lid = getUrlParameter("lid");
+	if (lid) {
+        localStorage.setItem("hasToken", true);
+
+		$("#settingsContainer").show();
+		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (localStorage.getItem("hasToken"))
+	{
+		$("#settingsContainer").show();
+	}
+
     $('form').submit(function(){
 	event.preventDefault(); //prevent default action 
 
