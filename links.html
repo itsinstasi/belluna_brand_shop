@@ -83,7 +83,7 @@
 						<div class="header__title">ОДЕЖДА ИЗ США</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=belluna_brand_shop');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=belluna_brand_shop', '_self');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -188,7 +188,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/82823323_189212198899879_5061223319277493244_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=ZWr8StIt4UcAX8Zqx7N&oh=f722b0ac4057fce39f68af3984f5813a&oe=5E9AD4CB" alt="">
+							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/80569007_904265070010154_6658481039865550562_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=zgS9fZWm380AX_qwnRP&oh=791acff58efa25a026e0c132ed7511ae&oe=5EA580D9" alt="">
 							</img></center>
 						</div>
 
@@ -247,7 +247,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function(){
 	var lid = getUrlParameter("lid");
-	if (lid) {
+	if (lid && lid != "true") {
         localStorage.setItem("hasToken", true);
 
 		$("#settingsContainer").show();
