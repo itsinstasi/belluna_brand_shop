@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess</title>
+    <meta name="title" content="Guess">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
+	<link rel="stylesheet" href="../css/style.css"/>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(56750959, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/56750959" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+    <noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
+    </noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__left">
+						<a href="../" class="header__logo">
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/72293480_2344951345574048_177106717367074816_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=Fks1bAcJxYcAX_NEhdQ&oh=9d8e241d61e63c33c07824c43fb7d164&oe=5EB6EE00" alt="Original Brand"></div>
+							<div class="header__logo-txt">belluna_brand_shop</div>
+						</a>
+						<div class="header__title">ОДЕЖДА ИЗ США</div>
+					</div>
+					<!--<div class="header__right">
+						<form action="#" method="get" class="search">
+							<input type="search" class="input search__input" placeholder="Поиск">
+							<button class="btn search__btn" type="submit" title="Искать"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>-->
+				</div>
+			</div>
+		</header>	
+		<div class="main">
+			<section class="big-banner" style="background-image: url(https://lichnyj-brend.ru/img/landing/violet.jpg);">
+				<div class="container">
+					<div class="big-banner__wrapper">
+						<h1 class="big-banner__title">Guess</h1>
+						<div class="big-banner__bar">
+							<div class="main-sec__contacts">
+								<div class="main-sec__contacts-wrap" id="js-cont-list">
+									<div class="main-sec__contacts-btn" id="js-cont-list-btn" onclick="document.getElementById('js-cont-list').classList.toggle('open');">Сообщение</div>
+									<ul class="main-sec__contacts-list">
+										<li><a href="https://www.instagram.com/belluna_brand_shop" 
+										onclick="ym(56750959, 'reachGoal', 'Instagram'); return true;"
+										target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="stories">
+				<div class="container">
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Tommy Hilfiger">
+										<a href="./tommy-hilfiger.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Tommy-Hilfiger.png);"></div>
+											<div class="stories__slide-txt">Tommy Hilfiger</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Calvin Klein">
+										<a href="./calvin-klein.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Calvin-Klein.png);"></div>
+											<div class="stories__slide-txt">Calvin Klein</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Guess">
+										<a href="./guess.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Guess.png);"></div>
+											<div class="stories__slide-txt">Guess</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="Victoria’s Secret">
+										<a href="./victoriaxs-secret.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/Victoria’s-Secret.png);"></div>
+											<div class="stories__slide-txt">Victoria’s Secret</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
+					</div>
+				</div>
+			</div>
+			<nav class="breadcrumbs">
+				<div class="container">
+					<a href="../main.html">Главная</a> / <span>Guess</span>
+				</div>
+			</nav>
+			<div class="tag">
+				<div class="container">
+					<div class="tag__group">
+						<div class="tag__item-list">
+							<a href="../posts/./ostalos--sovsem-malo-vremeni.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/81355699_115154449979054_7293256056255501936_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=vbxiNkRvBSsAX856mpH&oh=c1e8292dcff08b895b94c9c74f00a0ab&oe=5E9BBD10" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-21">21 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Осталось совсем мало времени</h2>
+										<p>Осталось совсем мало времени до момента дарить Новогодние подарки, в @belluna_brand_shop вы, без сомнений, найдёте то, что вам нужно!⭐️<br/>⠀<br/>🏷Цена:<br/>Рюкзак Guess — 4’890<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./remni-guessxx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/77037047_578247546076732_4406162506672849847_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=J7X6J9TsdxkAX9vu4qh&oh=a5bcb4ba5a45e3b43142dbaa0a230cc6&oe=5EBC3873" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-16">16 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Ремни Guess🐆</h2>
+										<p>Ремни Guess🐆<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./koshelyok-guess-stanet.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/73387331_163229698233873_8215537073492034499_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=g7R_kqnbOX4AX_tyKzb&oh=186e93b6d5f361b5a64c163eee30551d&oe=5ED77AD1" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-14">14 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Кошелёк Guess станет</h2>
+										<p>Кошелёк Guess станет отличным подарком  для вашей девушки или подруги!😊<br/>⠀<br/>🏷Цена: 1’990<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./new-collectionxxx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/72329985_167042114500984_1808012309772757613_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=ZLqdlo9jbuIAX9cMjeU&oh=ff89f6cc70b696e904d453bcb2bc323e&oe=5E26DF2D" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-09">09 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>New collection🔝✨</h2>
+										<p>New collection🔝✨<br/>⠀<br/>Видимо основные цвета нашей новой коллекции это сочетание чёрного и золотого👌🏼😅<br/>Но выглядит здорово, не правда ли?<br/>⠀<br/>🏷Цена:<br/>Стёганные сникеры Guess — 4’990<br/>Размеры 36 - 36,5<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./sumka-guessxx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/73004235_433441810678579_5069364009301935115_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=3vB4PO7EPKcAX-_RFfU&oh=4e3f054f38b3efcaded85c6ed1c53bd8&oe=5ECFF022" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-08">08 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Сумка Guess✔️</h2>
+										<p>Сумка Guess✔️<br/>🏷Цена:<br/>5’590<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./byt--stil-noy-legko-vmeste.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/73387339_550512819127389_4054841291768818210_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=109&_nc_ohc=mIRvFYPsN60AX-3J82p&oh=5643cd44262353d88e6e6ed42789d3dc&oe=5ED54864" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-08">08 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Быть стильной легко вместе</h2>
+										<p>Быть стильной легко вместе с нами🙌🏼 Не забывайте ставить ❤️ чтобы не пропускать наши новинки!🔝<br/>⠀<br/>🏷Цена:<br/>Рюкзак Guess — 4’890<br/>В наличии в двух цветах<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./zhenskie-futbolki-guess.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/75397698_451277485533844_3159765555204521527_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=104&_nc_ohc=VsqiVhdSrskAX_yyNFy&oh=9f8e240db8bd989c9e8f40918dd15125&oe=5ED07117" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-12-08">08 December 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Женские футболки Guess</h2>
+										<p>Женские футболки Guess будут отлично cочитаться, как с джинсами, так и юбками✔️<br/>В наличии футболки на любой вкус и цвет🙌🏼<br/>⠀<br/>🏷Цена:<br/>2’100<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+							<a href="../posts/./kedy-guessxx.html" class="tag__item">
+								<div class="tag__item-img"><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/73142797_1378540228971242_9064814080547704760_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=AjlZbYTslBcAX_TyWON&oh=a4ac675fb98877fc335e85ac60ec0d9d&oe=5ED28041" alt=""></div>
+								<div class="tag__item-desc">
+									<div class="tag__item-datas">
+										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-11-17">17 November 2019</time></div>
+										<div class="tag__item-datas-item"><i class="fa fa-comment-o" aria-hidden="true"></i>0</div> <div class="tag__item-datas-item"><i class="fa fa-heart" aria-hidden="true"></i>0</div>
+									</div>
+									<div class="tag__item-txt">
+										<h2>Кеды Guess😍</h2>
+										<p>Кеды Guess😍<br/>— 4’990<br/></p>
+										<p>...ЧИТАТЬ ДАЛЕЕ</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+		<div class="banner">
+			<div class="banner__overlay" id="js-banner-overlay" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');"></div>
+			<button class="btn banner__btn" onclick="document.getElementById('js-banner-overlay').classList.toggle('open');document.getElementById('js-banner-main').classList.toggle('open');">
+				<span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+			</button>
+			<div class="banner__main" id="js-banner-main">
+				<div class="banner__main-title">Свяжитесь с нами</div>
+				<div class="banner__main-row">
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">WhatsApp</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-telegram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Telegram</div>
+					</div>
+
+					<div class="banner__main-item disable">
+						<div class="banner__main-item-ring"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Viber</div>
+					</div>
+
+
+					<a href="https://www.instagram.com/belluna_brand_shop" target="_blank" 
+					onclick="ym(56750959, 'reachGoal', 'Instagram'); return true;"
+					class="banner__main-item">
+						<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="banner__main-item-txt">Instagram</div>
+					</a>
+
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
+	<!--jQuery-->
+	<script src="../js/vendors/jquery.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
+	<!--init-->
+	<script src="../js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="../js/jquery.main.js"></script>
+</body>
+</html>
