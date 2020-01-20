@@ -9,8 +9,8 @@
     <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
 	<link rel="stylesheet" href="css/style.css"/>
     
-    <meta name="description" content="belluna brands 5500 rub 1990 шоурумспб санктпетербург shop бренд кудрово дыбенко сумкиспб">
-    <meta name="keywords" content="belluna brands 5500 rub 1990 шоурумспб санктпетербург shop бренд кудрово дыбенко сумкиспб" />
+    <meta name="description" content="belluna brands 5500 rub шоурумспб санктпетербург shop бренд 1990 кудрово дыбенко сумкиспб">
+    <meta name="keywords" content="belluna brands 5500 rub шоурумспб санктпетербург shop бренд 1990 кудрово дыбенко сумкиспб" />
     
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <meta property="og:image:width" content="150"/>
     <meta property="og:image:height" content="150"/>
     <meta property="og:title" content="ОДЕЖДА ИЗ США" />
-    <meta property="og:description" content="belluna brands 5500 rub 1990 шоурумспб санктпетербург shop бренд кудрово дыбенко сумкиспб" />
+    <meta property="og:description" content="belluna brands 5500 rub шоурумспб санктпетербург shop бренд 1990 кудрово дыбенко сумкиспб" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="belluna_brand_shop" />
 
@@ -178,7 +178,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/80892106_2518823785104002_209879412889524669_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=sqVZ6cmvH48AX-xQ5E8&oh=f6f8ab40d52cc73c7b382c813b661dce&oe=5EDA4AF1" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/83895253_1298110110387617_4079068926442726320_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=4pLfo3O9EQEAX-anj2C&oh=2c821d026b61d7a3c7036508cfa90fe6&oe=5E9ECA77" alt="">
 							</img></center>
 						</div>
 
@@ -238,6 +238,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
